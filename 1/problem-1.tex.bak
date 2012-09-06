@@ -1,0 +1,116 @@
+\documentclass[00-main.tex]{subfiles}
+\begin{document}
+
+\section{Problem One}
+T. Mitchell widely used definition of a well posed learning problem as
+\begin{listing}
+A computer program is said to learn from experience E with respect to some
+class of tasks T and performance measure P, if its performance at tasks in T,
+as measured by P, improve by experience E.
+\end{listing}
+
+\subsection{}
+In mathematics a well posed problem is one that has a (unique) solution, and where a
+small change in the problem's initial condition(s) leads to only small changes in the solution.
+Here's two well posed learning problems presented.
+
+\subsubsection{Ad-sensitive customers}
+The retailer store chain Mall-Wart want to install screens that present various offers to their 
+customers. A screen should be placed next to a cash register, so that an offer is presented to 
+the customer when the cashier is in the process of scanning their products. The offer should be
+chosen such that the customer are most likely to accept it.
+
+This can be posed as a machine learning problem:
+
+\begin{itemize}
+  \item Task \textit{T}: decide which offer to present to the customer
+  \item Performance measure \textit{P}: percent of accepted offers
+  \item Training experience \textit{E}: The product set, the chosen offer, and whether the offer was 
+  accepted or not, are stored in a database on every sale.
+\end{itemize}
+
+\subsubsection{Self-driving shopping cart robot}
+Mall-Wart want their customers to be followed around by a self-driving shopping cart. This can also 
+be posed as a machine learning problem:
+
+\begin{itemize}
+  \item Task \textit{T}: navigating through the store by following a customer around using vision sensors
+  \item Performance measure \textit{P}: average distance traveled before the customer correct the robot
+  \item Training experience \textit{E}: a visual record of the store together with the navigation patterns
+  of a human doing the task
+\end{itemize}
+
+\subsection{}
+Let $X$ be the set of instances of a concept learning problem, and let $H$ be the set of hypotheses a learner
+may consider regarding learning the identity of the target concept $c$. \textbf{Inductive bias} for a learning method $L$ are
+the assumptions the learner make that limit $H$, so that the cardinality $|H|$ of the hypotheses 
+set are smaller than the cardinality of the power set of $X$, i.e $|H| < | \mathcal P \left({X}\right) |$.
+
+Inductive bias is an important concept in machine learning because a biased learner can make inductive leaps to 
+classify unseen examples, $x_i$. For example, the inductive bias of the \textsc{Candidate-Elimination} algorithm is
+the assumption that $c \in H$. The bias exhibited by the ID3 algorithm is less precise, nevertheless one can 
+approximate its bias as saying ID3 prefers shorter (simpler) trees (hypotheses) over complex trees. In addition, ID3
+prefers trees where information is clustered close to the root.
+
+Note that in both cases the learner has a bias for selecting one consistent hypothesis over another.
+
+
+\section{Problem Two}
+\subsection{Choosing a target function for tic-tac-toe}
+
+\begin{itemize}
+  \item $ x_1 $: number of black pieces next to each other
+  \item $ x_2 $: number of white pieces next to each other
+  \item $ x_3 $: number of two available squares next to the black pieces
+  \item $ x_4 $: number of two available squares next to the white pieces
+  \item $ x_5 $: number of available squares next to and in line with the black pieces
+  \item $ x_6 $: number of available squares next to and in line with the white pieces
+\end{itemize}
+
+
+\subsection{}
+As a 3x3 matrix. In python:
+
+\mint{python} | Board = 3*[3*[0]] |
+
+\subsection{}
+
+\subsection{}
+
+\subsection{}
+
+\subsection{}
+
+\subsection{}
+
+
+\section{Coding}
+
+\begin{lstlisting}
+def foo(bar):
+    print 'Eat my ' + bar
+\end{lstlisting}
+
+% listing makes a floating box with top and bottom borders
+\begin{listing}
+% minted for syntax highlighting
+\begin{minted}[linenos]{python} 
+def foo(bar='Chocolate'):
+    rage = 'Did you eat my ' + bar + '?!'
+    print rage
+\end{minted}
+\end{listing}
+Remember to \mint{python} |import gravity|
+
+\section{Citing}
+This is a citation\cite{kiss-2010-I}. And you can use the citation verbally as well, according to \citet{kiss-2010-I}.
+
+\section{Mathemagic}
+An inline equation is written $x^3 = 8$. You can also use this
+\begin{equation}
+\label{eq:1337-equation}
+x^5+4x^2=1337x
+\end{equation}
+to write a 1337 equation.
+\bibliosub
+\end{document}

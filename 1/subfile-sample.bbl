@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Kiss et~al.(2010)Kiss, Steen, \AA~sen, and Torp]{kiss-2010-I}
+Gabriel Kiss, Erik Steen, Jon Petter~Helgesen \AA~sen, and Hans~G Torp.
+\newblock {GPU volume rendering in 3D echocardiography: Real-time
+  pre-processing and ray-casting}.
+\newblock In \emph{2010 IEEE International Ultrasonics Symposium}, pages
+  193--196. IEEE, October 2010.
+\newblock ISBN 978-1-4577-0382-9.
+\newblock \doi{10.1109/ULTSYM.2010.5935485}.
+\newblock URL
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5935485}.
+
+\end{thebibliography}

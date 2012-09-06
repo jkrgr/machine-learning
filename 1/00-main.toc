@@ -1,0 +1,17 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Problem One}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}}{1}{subsection.1.1}
+\contentsline {subsubsection}{Ad-sensitive customers}{2}{subsubsection*.1}
+\contentsline {subsubsection}{Self-driving shopping cart robot}{2}{subsubsection*.2}
+\contentsline {subsection}{\numberline {1.2}}{2}{subsection.1.2}
+\contentsline {section}{\numberline {2}Problem Two}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}}{3}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}}{3}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}}{3}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}}{3}{subsection.2.7}
+\contentsline {section}{\numberline {3}Coding}{3}{section.3}
+\contentsline {section}{\numberline {4}Citing}{4}{section.4}
+\contentsline {section}{\numberline {5}Mathemagic}{4}{section.5}
